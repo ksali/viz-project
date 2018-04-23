@@ -1,0 +1,126 @@
+#  global variables
+:root{
+  --content-width: 1000px;
+  --breakpoint: 799px;
+  --nav-height: 70px;
+  --nav-background: #262626;
+  --nav-font-color: #ffffff;
+  --link-hover-color: #2581DC;
+}
+html, body{
+  margin:0;
+  padding:0;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: blueviolet;
+  font-family: 'Gugi', cursive;
+}
+
+# content
+.content{
+  padding: 20px 0 0 20px;
+}
+.content h1 {
+  padding:20px;
+}
+
+article.about-content{
+  font-size: 16px;
+}
+
+.nav{
+  opacity: 0.5;
+}
+.nav li {
+  font-family: inherit, 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: auto;
+  border-bottom: 1px solid #888;
+  padding: 2px;
+  width: auto;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+  padding: 10px;
+}
+ 
+.nav a:hover {
+  background-color: #005f5f;
+}
+ 
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+ 
+main {
+  height: 100%;
+  display: flex;
+  margin: 50px 20px 0 20px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  font-size: 3em;
+  font-weight: 100;
+  color: black;
+  margin: 0;
+}
+main h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+main h3 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0;
+}
+main a {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #f44;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 720px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+
