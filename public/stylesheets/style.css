@@ -18,6 +18,7 @@ body {
   font-family: 'Gugi', cursive;
 }
 
+
 # content
 .content{
   padding: 20px 0 0 20px;
@@ -26,9 +27,37 @@ body {
   padding:20px;
 }
 
+/* About page */
 article.about-content{
-  font-size: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 45px 10px 10px 10px;
+  padding: 5px;
+  background-color: rgb(250, 250, 250);
 }
+
+article.about-content p {
+  text-indent: 5%;
+}
+
+article.about-content p.title {
+  text-indent: 0;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+article.about-content a {
+  text-decoration: none;
+}
+
+article.about-content ul {
+  text-indent: 3%;
+}
+
+article.about-content ul li {
+  list-style: none;
+}
+
 
 .nav{
   opacity: 0.5;

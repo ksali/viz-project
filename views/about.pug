@@ -2,5 +2,40 @@ extends layout
 
 block content
   .content
-    h1 Welcome,
-    article.about-content This is our visualization project for the Visualization specialization course Spring 2018.
+    //h1 Welcome,
+    article.about-content 
+      h2 Statistics of European Countries
+      p.title Motivation:
+      p 
+        | We live in a world where we are given the opportunity to travel and 
+        | maybe even choose to live in a different country from where we are born
+        | (easier for some countries than others, but still valid). However, if you
+        | have ever gone through the process of searching for valuable information
+        | for a foreign country, chances are that at some point you have ended up
+        | overwhelmed by the large amount of information and didn't know where to
+        | start or what source to trust.
+      p  
+        | Despite the multiple websites that offer different resources and data 
+        | about countries, there is still to exist an easily understandable, 
+        | user-friendly platform with statistics of different countries all brought together.
+
+      p.title Idea:
+      p
+        | We came up with the idea to visualize data about different aspects of 
+        | countries in Europe. The data we will be visualizing is mostly taken 
+        | from 
+        a(href="http://ec.europa.eu") http://ec.europa.eu 
+        | which provides data from the statistical office of the European Union.
+        | Each dataset will represent an aspect about a country and the users will 
+        | be able to compare the data of different countries to get a better insight
+        | and help them understand more about the country they are interested in.
+      p
+        | The tool we will be using is Tableau and the aspects/data we will be visualizing are the following:
+        ul.unlisted
+          li Cost of living 
+          li Education
+          li Labor/Job market
+          li Population distribution/structure
+          li Crime rates
+          li Environment
+      
