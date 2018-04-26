@@ -8,7 +8,13 @@ html
          href="https://use.fontawesome.com/releases/v5.0.10/css/all.css", 
          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg",
          crossorigin="anonymous")
-
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js")
+    script(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js")
+  
   body
+    include background.pug
     include navigation.pug
     block content
+    script(src="javascript/background.js")
+
